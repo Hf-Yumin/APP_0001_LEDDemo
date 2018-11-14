@@ -7,6 +7,7 @@ import android.view.MenuItem;
 import android.widget.Button;
 import android.view.View;
 import android.widget.CheckBox;
+import android.widget.Toast;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -40,6 +41,56 @@ public class MainActivity extends AppCompatActivity {
                 checkBoxLed3.setChecked(false);
                 checkBoxLed4.setChecked(false);
             }
+        }
+    }
+
+    public void onCheckboxClicked(View view) {
+        // Is the view now checked?
+        boolean checked = ((CheckBox) view).isChecked();
+
+        // Check which checkbox was clicked
+        switch(view.getId()) {
+            case R.id.LED1:
+                if (checked) {
+                    // Put some meat on the sandwich
+                    Toast.makeText(getApplicationContext(), "LED1 ON!", Toast.LENGTH_SHORT).show();
+                }
+                else {
+                    // Remove the meat
+                    Toast.makeText(getApplicationContext(), "LED1 OFF!", Toast.LENGTH_SHORT).show();
+                }
+                break;
+            case R.id.LED2:
+                if (checked) {
+                    // Put some meat on the sandwich
+                    Toast.makeText(getApplicationContext(), "LED2 ON!", Toast.LENGTH_SHORT).show();
+                }
+                else {
+                    // Remove the meat
+                    Toast.makeText(getApplicationContext(), "LED2 OFF!", Toast.LENGTH_SHORT).show();
+                }
+                break;
+            case R.id.LED3:
+                if (checked) {
+                    // Put some meat on the sandwich
+                    Toast.makeText(getApplicationContext(), "LED3 ON!", Toast.LENGTH_SHORT).show();
+                }
+                else {
+                    // Remove the meat
+                    Toast.makeText(getApplicationContext(), "LED3 OFF!", Toast.LENGTH_SHORT).show();
+                }
+                break;
+            case R.id.LED4:
+                if (checked) {
+                    // Put some meat on the sandwich
+                    Toast.makeText(getApplicationContext(), "LED4 ON!", Toast.LENGTH_SHORT).show();
+                }
+                else {
+                    // Remove the meat
+                    Toast.makeText(getApplicationContext(), "LED4 OFF!", Toast.LENGTH_SHORT).show();
+                }
+                break;
+            // TODO: Veggie sandwich
         }
     }
 
