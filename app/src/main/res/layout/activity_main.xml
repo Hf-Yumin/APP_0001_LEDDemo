@@ -18,24 +18,28 @@
         />
 
     <CheckBox
+        android:id = "@+id/LED1"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="LED1"
         />
 
     <CheckBox
+        android:id = "@+id/LED2"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="LED2"
         />
 
     <CheckBox
+        android:id = "@+id/LED3"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="LED3"
         />
 
     <CheckBox
+        android:id = "@+id/LED4"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="LED4"
