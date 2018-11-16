@@ -8,7 +8,7 @@ import android.widget.Button;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.Toast;
-
+import com.example.wuyum.hardlibrary.*;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -22,6 +22,10 @@ public class MainActivity extends AppCompatActivity {
     class MyButtonListener implements View.OnClickListener {
         @Override
         public void onClick(View view) {
+
+            //instantiate the object to control hardware
+            HardControl hardControl = new HardControl();
+
             // Perform action on click
             ledon = !ledon;
             if(ledon)
